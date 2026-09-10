@@ -1,3 +1,5 @@
+import math
+
 # comment
 
 # here
@@ -25,7 +27,7 @@ print(e)
 e += 7
 print(e)
 
-# f-string
+# f-strings
 
 print(f"e is equal to {e}")
 
@@ -33,3 +35,46 @@ e -= 6.5
 e += 5.1
 
 print(f"wait nevermind e is equal to {e}")
+
+#C COMPARISONS (booleans, which always return true or false)
+# < > <= >= == !=
+
+print(4 < 5)
+print(7 == 4)
+print(1 != 4)
+
+isEqual = "yes" == "yes"
+print(isEqual)
+
+# LOGICAL OPERATORS
+# In order of precedence not    and    or
+f = False
+t = True
+
+print(not f) #true
+print(f and t) #false
+print(t or t) #true
+print(f or t and not f) #true
+
+# CASTING ()
+
+g = int(5.5474833746)
+print(g)
+
+# STRINGS
+
+s1 = "Goodnight"
+s2 = " and "
+s3 = "Goodbye"
+end = s1 + s2 + s3 # concatenation with +
+end += ", Cowboy." # add to the variable
+
+print(end + "\n")
+
+# MATH LIBRARY using 
+#max, min, square root
+
+print(math.sqrt(14))
+print(math.ceil(3.65))
+print(math.floor(8.94))
+print(math.pow(2,4))
