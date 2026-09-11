@@ -78,3 +78,60 @@ print(math.sqrt(14))
 print(math.ceil(3.65))
 print(math.floor(8.94))
 print(math.pow(2,4))
+
+# CONDITIONALS
+
+# if elif else
+
+t = True
+f = False
+
+if 1 > 1 and 1 == 1:
+    print("you reached the first condition")
+elif 6 == 7 or 3 != 3:
+    print("Reached 2nd condition")
+elif 9 != 9:
+    print("third condition")
+else:
+    print("reached else")
+
+# LIST
+# A list can hold any data type, and can grow and shrink
+
+#index  0   1   2  3   4 ~
+nums = [34, 52, 3, 64, 31]
+
+print(nums)
+print(nums[2])
+print(nums[1])
+print(nums[4])
+print(nums[-2])
+
+print(nums[0] + nums[2])
+
+nums[0] = 128
+print(nums)
+
+# LIST METHODS
+# specail build-in methods
+
+words = []
+
+words.append("JOE BLOWS")
+words.append("JOB FROM LOES")
+words.append("BIG ASS NOSE")
+words.append("TERRIBLE WORD")
+print(words)
+
+words.remove("TERRIBLE WORD")
+words.insert(3,"GARDEN HOSE")
+length = len(words)
+print(words)
+print(length)
+
+import time
+
+for i in range(100):
+    print(words)
+    time.sleep(0.001)
+
