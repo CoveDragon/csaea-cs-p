@@ -129,9 +129,46 @@ length = len(words)
 print(words)
 print(length)
 
-import time
+# ITERATION
+# for loop will iterate over a range
+# A range is a range of numbers.
+# # range(stop), range(start, stop), range (start, stop, step)
 
-for i in range(100):
-    print(words)
-    time.sleep(0.001)
+for i in range(5):
+    print(i)
 
+animals = ["Sheep", "Deer", "Moose"]
+print(f"List: {animals}")
+
+for animal in animals:
+    print(f"We saw a {animal}")
+
+nums = [5.1, 2,2, 5.3, 3.4, 8.5]
+
+ #write a for loop to print each value in list nums
+
+print(f"Number List: {nums}")
+for number in nums:
+    print(f"Number: {number}")
+
+for i in range(len(nums)):
+    print(nums[i])
+
+# Debugging
+print(len(nums))
+print(range(5))
+
+for i in range(0,5):
+    print(nums[i])
+
+#while loop
+
+# iterates while a condition is true
+
+x = 5
+
+while x < 10:
+    print(x)
+    x += 1
+
+#control + c stops the code
