@@ -21,3 +21,17 @@ print("Zebra" < "apple")
 print(not f or t and f)
 # True
 print(nums[-len(nums)])
+# 4
+for i in range(10, 0, -3):
+    print(i)
+# 10
+# 7
+# 4
+# 1
+x = 5
+while x < 10:
+    x += 2
+    print(x)
+# 7
+# 9
+# 11
