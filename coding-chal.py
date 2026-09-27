@@ -109,10 +109,19 @@ if Answer3 == "F":
 else:
     print("you are a failure.")
 
-time.wait(0.7)
+time.sleep(0.7)
 print(f"Other peoples scores: {scores}")
-time.wait(0.5)
+time.sleep(0.5)
 print(f"your score was: {PlayerScore}")
+scores.insert(5,PlayerScore)
+
+HighScore = scores[0]
+
+for score in scores:
+    if score > HighScore:
+        HighScore = score
+
+print("The highest score was:", HighScore)
 
 
  # 15. Pass rate
@@ -144,3 +153,47 @@ if grades[5] >=70:
     print("#5 passed")
 else:
     print("#5 failed")
+
+# 16. Garden Fence
+
+import math
+ 
+area = 49
+
+Side = math.sqrt(area)
+Perimeter = Side * 4
+
+print(f"The Perimeter of the garden is: {Perimeter}")
+
+# 18. Playlist swap
+
+playlist = ["Intro", "Song A", "Song B", "Finale"]
+print(playlist)
+
+playlist[0], playlist[3] = playlist[3], playlist[0]
+print(playlist)
+
+# 19. Leap year checker
+
+year = 1900
+
+divisible100 = year % 100
+if divisible100 == 0:
+    divisible400 = year % 400
+    if divisible400 == 0:
+        print("leap year")
+    else:
+        print("not leap year")
+else:
+    divisible4 = year % 4
+    if divisible4 == 0:
+        print("leap year")
+    else:
+        print("not leap year")
+
+# 3. Temp converter
+
+fahrenheit = 212
+
+C = (fahrenheit - 32) * 5 / 9
+print(f"{fahrenheit} farenheit is equal to {C} celcuis.")
