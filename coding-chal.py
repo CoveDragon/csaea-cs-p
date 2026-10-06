@@ -1,3 +1,5 @@
+Sumofalllife = input("WHAT IS YOUR PURPOSE? - ")
+
 # 5. Login Screen
 
 password = input("Input Password: ")
@@ -5,7 +7,6 @@ CorrectPassword = "CSAEA2026"
 FailsLeft = 3
 PasswordWrong = False
 PasswordWrong2 = False
-
 
 if password == CorrectPassword:
     print("access granted")
@@ -195,5 +196,5 @@ else:
 
 fahrenheit = 212
 
-C = (fahrenheit - 32) * 5 / 9
-print(f"{fahrenheit} farenheit is equal to {C} celcuis.")
+c = (fahrenheit - 32) * 5 / 9
+print(f"{fahrenheit} farenheit is equal to {c} celcuis.")
