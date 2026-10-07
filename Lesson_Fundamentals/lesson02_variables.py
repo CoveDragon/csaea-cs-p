@@ -47,10 +47,19 @@ print(f"{Senator}\n{age}\n{Greg_Fuliman}")
 # Create a variable called 'count' with a value of 10.  
 # Use another variable to increase 'count' by 5
 # Print the result
-
+count = 10
+count5 = count + 5
+print(count5)
 
 # Challenge 3: Swap Variables  
 # Given variables num = 4 and y = "hello".  
 # Swap the values so that x = "hello" and y = 4. 
 # Use a temporary variable.  
 # Hint: You will need to create one new variable. 
+VariableA = "Frank"
+VariableB = "Davey"
+temp = VariableA
+VariableA = VariableB
+VariableB = temp
+print(VariableA)
+print(VariableB)
